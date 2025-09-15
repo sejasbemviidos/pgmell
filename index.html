@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Tecnologia - Provedor de Internet</title>
+    <title>Super Connect Telecom - Provedor de Internet</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <style>
         :root {
-            --primary-color: #0d6efd;
-            --secondary-color: #0dcaf0;
-            --dark-color: #212529;
-            --light-color: #f8f9fa;
+            --primary-color: #0066cc;
+            --secondary-color: #00aaff;
+            --accent-color: #ff6600;
         }
         
         .bg-primary-custom {
             background-color: var(--primary-color);
         }
         
-        .text-primary-custom {
-            color: var(--primary-color);
-        }
-        
         .btn-primary-custom {
             background-color: var(--primary-color);
             border-color: var(--primary-color);
-            color: white;
         }
         
         .btn-primary-custom:hover {
-            background-color: #0b5ed7;
-            border-color: #0a58ca;
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .text-accent {
+            color: var(--accent-color);
         }
         
         .hero-section {
@@ -42,34 +40,33 @@
             color: white;
         }
         
-        .service-card {
-            transition: transform 0.3s;
-            border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        
         .feature-icon {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
             color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .pricing-card {
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
         }
         
         .contact-info {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .contact-info li {
-            margin-bottom: 10px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
         }
         
         footer {
-            background-color: var(--dark-color);
+            background-color: #343a40;
             color: white;
+            padding: 30px 0;
         }
     </style>
 </head>
@@ -77,11 +74,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <i class="bi bi-wifi fs-3 me-2"></i>
-                <span class="fw-bold">Smart Tecnologia</span>
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-lightning-charge-fill"></i> Super Connect Telecom
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -90,13 +86,13 @@
                         <a class="nav-link" href="#inicio">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#servicos">Serviços</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#planos">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contato">Contato</a>
@@ -109,137 +105,176 @@
     <!-- Hero Section -->
     <section id="inicio" class="hero-section">
         <div class="container text-center">
-            <h1 class="display-4 fw-bold mb-4">Internet Rápida e Estável para sua Casa ou Empresa</h1>
-            <p class="lead mb-5">Conecte-se com o mundo em alta velocidade com a Smart Tecnologia</p>
-            <a href="#planos" class="btn btn-primary btn-lg me-3">Ver Planos</a>
-            <a href="#contato" class="btn btn-outline-light btn-lg">Contratar Agora</a>
+            <h1 class="display-4 fw-bold">Internet de Alta Velocidade para Sua Casa ou Empresa</h1>
+            <p class="lead">Conecte-se com o mundo em alta velocidade com a melhor infraestrutura da região</p>
+            <a href="#planos" class="btn btn-warning btn-lg mt-3">Conheça Nossos Planos</a>
         </div>
     </section>
 
-    <!-- Sobre -->
-    <section id="sobre" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="fw-bold mb-4">Sobre a <span class="text-primary-custom">Smart Tecnologia</span></h2>
-                    <p class="lead">Há anos oferecendo a melhor conexão para Araranguá e região</p>
-                    <p>A Smart Tecnologia - Suprimentos de Informática LTDA atua no mercado fornecendo internet de alta qualidade e soluções em tecnologia para clientes residenciais e empresariais.</p>
-                    <p>Nossa missão é proporcionar a melhor experiência de conexão com estabilidade, velocidade e atendimento personalizado.</p>
-                    <div class="d-flex align-items-center mt-4">
-                        <div class="me-4">
-                            <i class="bi bi-award feature-icon"></i>
-                            <h5>Qualidade Garantida</h5>
-                        </div>
-                        <div>
-                            <i class="bi bi-headset feature-icon"></i>
-                            <h5>Suporte 24/7</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1563014959-7aaa83350992?ixlib=rb-4.0.3" alt="Equipe Smart Tecnologia" class="img-fluid rounded shadow">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Serviços -->
-    <section id="servicos" class="py-5 bg-light">
+    <!-- Services Section -->
+    <section id="servicos" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">Nossos <span class="text-primary-custom">Serviços</span></h2>
-                <p class="lead">Oferecemos soluções completas em conectividade</p>
+                <h2 class="fw-bold">Nossos Serviços</h2>
+                <p class="text-muted">Oferecemos as melhores soluções em conectividade</p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card service-card h-100 text-center p-4">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
                         <i class="bi bi-house-door feature-icon"></i>
                         <h4>Internet Residencial</h4>
-                        <p>Planos de internet de alta velocidade para sua casa com toda a família conectada.</p>
+                        <p>Planos de internet fibra óptica com alta velocidade para sua família</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card service-card h-100 text-center p-4">
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
                         <i class="bi bi-building feature-icon"></i>
                         <h4>Internet Empresarial</h4>
-                        <p>Conectividade dedicada e estável para seu negócio, com suporte prioritário.</p>
+                        <p>Soluções dedicadas para empresas com maior estabilidade</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card service-card h-100 text-center p-4">
+                <div class="col-md-4 mb-4">
+                    <div class="text-center">
                         <i class="bi bi-wifi feature-icon"></i>
-                        <h4>Link Dedicado</h4>
-                        <p>Conexões dedicadas para empresas que necessitam de máxima estabilidade.</p>
+                        <h4>Wi-Fi de Qualidade</h4>
+                        <p>Cobertura completa em todos os ambientes da sua casa ou empresa</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Planos -->
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Por que escolher a Super Connect?</h2>
+                    <div class="d-flex mb-3">
+                        <div class="me-4">
+                            <i class="bi bi-speedometer2 text-accent" style="font-size: 2rem;"></i>
+                        </div>
+                        <div>
+                            <h5>Alta Velocidade</h5>
+                            <p>Navegue, trabalhe e assista a streaming sem travamentos</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="me-4">
+                            <i class="bi bi-shield-check text-accent" style="font-size: 2rem;"></i>
+                        </div>
+                        <div>
+                            <h5>Conectividade Segura</h5>
+                            <p>Proteção avançada para seus dados e dispositivos</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="me-4">
+                            <i class="bi bi-headset text-accent" style="font-size: 2rem;"></i>
+                        </div>
+                        <div>
+                            <h5>Suporte Técnico 24/7</h5>
+                            <p>Nossa equipe está sempre pronta para ajudar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3" class="img-fluid rounded" alt="Tecnologia de internet">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
     <section id="planos" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">Nossos <span class="text-primary-custom">Planos</span></h2>
-                <p class="lead">Escolha o plano ideal para suas necessidades</p>
+                <h2 class="fw-bold">Nossos Planos</h2>
+                <p class="text-muted">Escolha o plano ideal para suas necessidades</p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card text-center h-100">
-                        <div class="card-header py-4 bg-primary text-white">
-                            <h3>Plano Residencial</h3>
-                            <div class="display-4 fw-bold">100 Mbps</div>
-                            <p>Ideal para famílias</p>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled mb-4">
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Download até 100 Mbps</li>
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Upload até 50 Mbps</li>
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Wi-Fi incluso</li>
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Instalação gratuita</li>
-                            </ul>
-                            <div class="d-grid">
-                                <a href="#contato" class="btn btn-primary-custom btn-lg">Contratar</a>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card h-100">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title">Plano Básico</h5>
+                            <h3 class="fw-bold">100 Mbps</h3>
+                            <div class="my-4">
+                                <span class="h2 fw-bold">R$ 99,90</span>
+                                <span>/mês</span>
                             </div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-check text-success me-2"></i> Download de 100 Mbps</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Upload de 50 Mbps</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Wi-Fi incluso</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Instalação gratuita</li>
+                            </ul>
+                            <a href="#contato" class="btn btn-primary-custom">Assinar Agora</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center h-100">
-                        <div class="card-header py-4 bg-success text-white">
-                            <h3>Plano Premium</h3>
-                            <div class="display-4 fw-bold">300 Mbps</div>
-                            <p>Para quem exige mais</p>
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card h-100 border-primary">
+                        <div class="card-header bg-primary-custom text-white text-center py-3">
+                            <h5 class="mb-0">Plano Premium</h5>
                         </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled mb-4">
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Download até 300 Mbps</li>
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Upload até 150 Mbps</li>
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Wi-Fi avançado</li>
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Suporte prioritário</li>
-                            </ul>
-                            <div class="d-grid">
-                                <a href="#contato" class="btn btn-success btn-lg">Contratar</a>
+                        <div class="card-body text-center p-4">
+                            <h3 class="fw-bold">300 Mbps</h3>
+                            <div class="my-4">
+                                <span class="h2 fw-bold">R$ 149,90</span>
+                                <span>/mês</span>
                             </div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-check text-success me-2"></i> Download de 300 Mbps</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Upload de 150 Mbps</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Wi-Fi avançado</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Instalação gratuita</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Suporte prioritário</li>
+                            </ul>
+                            <a href="#contato" class="btn btn-primary-custom">Assinar Agora</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center h-100">
-                        <div class="card-header py-4 bg-dark text-white">
-                            <h3>Plano Empresarial</h3>
-                            <div class="display-4 fw-bold">500 Mbps</div>
-                            <p>Para seu negócio</p>
-                        </div>
-                        <div class="card-body">
+                <div class="col-md-4 mb-4">
+                    <div class="card pricing-card h-100">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title">Plano Empresarial</h5>
+                            <h3 class="fw-bold">500 Mbps</h3>
+                            <div class="my-4">
+                                <span class="h2 fw-bold">R$ 299,90</span>
+                                <span>/mês</span>
+                            </div>
                             <ul class="list-unstyled mb-4">
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Download até 500 Mbps</li>
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Upload até 250 Mbps</li>
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Link dedicado</li>
-                                <li class="py-2"><i class="bi bi-check text-success me-2"></i> Suporte 24/7</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Download de 500 Mbps</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Upload de 250 Mbps</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Wi-Fi empresarial</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Link dedicado</li>
+                                <li><i class="bi bi-check text-success me-2"></i> Suporte 24/7</li>
                             </ul>
-                            <div class="d-grid">
-                                <a href="#contato" class="btn btn-dark btn-lg">Contratar</a>
+                            <a href="#contato" class="btn btn-primary-custom">Assinar Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3" class="img-fluid rounded" alt="Equipe Super Connect">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Sobre a Super Connect Telecom</h2>
+                    <p>Há mais de 10 anos conectando pessoas e empresas em Olho d'Água das Flores e região. Nossa missão é proporcionar a melhor experiência em internet de alta velocidade com estabilidade e suporte de qualidade.</p>
+                    <p>Investimos constantemente em nossa infraestrutura para levar fibra óptica até sua casa ou empresa, garantindo a melhor conexão para trabalhar, estudar ou entreter.</p>
+                    <div class="mt-4">
+                        <div class="d-flex">
+                            <i class="bi bi-award text-accent me-3" style="font-size: 1.5rem;"></i>
+                            <div>
+                                <h5>Melhor Provedor da Região</h5>
+                                <p class="text-muted">Prêmio qualidade em telecomunicações 2022</p>
                             </div>
                         </div>
                     </div>
@@ -248,72 +283,71 @@
         </div>
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="py-5 bg-light">
+    <!-- Contact Section -->
+    <section id="contato" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">Entre em <span class="text-primary-custom">Contato</span></h2>
-                <p class="lead">Estamos à disposição para melhor atendê-lo</p>
+                <h2 class="fw-bold">Entre em Contato</h2>
+                <p class="text-muted">Estamos à disposição para tirar suas dúvidas</p>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="card p-4 h-100">
+                <div class="col-md-6 mb-4">
+                    <div class="contact-info h-100">
                         <h4 class="mb-4">Informações de Contato</h4>
-                        <ul class="contact-info">
-                            <li>
-                                <i class="bi bi-geo-alt-fill text-primary-custom me-2"></i>
-                                <strong>Endereço:</strong><br>
-                                Avenida Capitão Pedro Fernandes, 1200 Sala 03<br>
-                                Urussanguinha, Araranguá - SC<br>
-                                CEP: 88905-010
-                            </li>
-                            <li>
-                                <i class="bi bi-telephone-fill text-primary-custom me-2"></i>
-                                <strong>Telefone:</strong> (44) 99154-7898
-                            </li>
-                            <li>
-                                <i class="bi bi-envelope-fill text-primary-custom me-2"></i>
-                                <strong>Email:</strong> contato@smarttecnologia.com.br
-                            </li>
-                            <li>
-                                <i class="bi bi-clock-fill text-primary-custom me-2"></i>
-                                <strong>Horário de Atendimento:</strong><br>
-                                Segunda a Sexta: 8h às 18h<br>
-                                Sábado: 9h às 12h
-                            </li>
-                        </ul>
-                        <div class="mt-4">
-                            <h5>Nos acompanhe:</h5>
-                            <div class="d-flex mt-3">
-                                <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-facebook"></i></a>
-                                <a href="#" class="btn btn-outline-info me-2"><i class="bi bi-instagram"></i></a>
-                                <a href="#" class="btn btn-outline-success me-2"><i class="bi bi-whatsapp"></i></a>
+                        <div class="d-flex mb-3">
+                            <i class="bi bi-geo-alt-fill text-accent me-3" style="font-size: 1.5rem;"></i>
+                            <div>
+                                <h5>Endereço</h5>
+                                <p>Rua Sao Francisco 312, Centro<br>Olho d'Água das Flores AL<br>57442-000</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="bi bi-telephone-fill text-accent me-3" style="font-size: 1.5rem;"></i>
+                            <div>
+                                <h5>Telefone</h5>
+                                <p>(82) 98807-4488</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="bi bi-envelope-fill text-accent me-3" style="font-size: 1.5rem;"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p>contato@superconnecttelecom.com.br</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-clock-fill text-accent me-3" style="font-size: 1.5rem;"></i>
+                            <div>
+                                <h5>Horário de Atendimento</h5>
+                                <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card p-4 h-100">
-                        <h4 class="mb-4">Envie uma Mensagem</h4>
-                        <form>
-                            <div class="mb-3">
-                                <label for="nome" class="form-label">Nome completo</label>
-                                <input type="text" class="form-control" id="nome" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="telefone" class="form-label">Telefone</label>
-                                <input type="tel" class="form-control" id="telefone">
-                            </div>
-                            <div class="mb-3">
-                                <label for="mensagem" class="form-label">Mensagem</label>
-                                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary-custom">Enviar Mensagem</button>
-                        </form>
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-4">Envie uma Mensagem</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mensagem</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary-custom">Enviar Mensagem</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -321,16 +355,38 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-4">
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <p class="mb-0">Smart Tecnologia - Suprimentos de Informática LTDA</p>
-                    <p class="mb-0">CNPJ: 10.540.221/0001-06</p>
+                <div class="col-md-4 mb-4">
+                    <h5><i class="bi bi-lightning-charge-fill"></i> Super Connect Telecom</h5>
+                    <p>Provedor de internet de alta velocidade para Olho d'Água das Flores e região.</p>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i></a>
+                    </div>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0">&copy; 2023 Smart Tecnologia. Todos os direitos reservados.</p>
+                <div class="col-md-4 mb-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white text-decoration-none">Início</a></li>
+                        <li><a href="#servicos" class="text-white text-decoration-none">Serviços</a></li>
+                        <li><a href="#planos" class="text-white text-decoration-none">Planos</a></li>
+                        <li><a href="#sobre" class="text-white text-decoration-none">Sobre</a></li>
+                        <li><a href="#contato" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
                 </div>
+                <div class="col-md-4">
+                    <h5>CNPJ</h5>
+                    <p>15.392.907/0001-10</p>
+                    <h5>Área de Cobertura</h5>
+                    <p>Olho d'Água das Flores e cidades vizinhas</p>
+                </div>
+            </div>
+            <hr class="mt-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Super Connect Telecom LTDA - Todos os direitos reservados</p>
             </div>
         </div>
     </footer>
